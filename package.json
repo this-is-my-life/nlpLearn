@@ -1,5 +1,9 @@
 {
   "dependencies": {
-    "node-nlp": "^4.17.2"
+    "discord.js": "^12.5.1",
+    "knex": "^0.21.12",
+    "mysql": "^2.18.1",
+    "node-nlp": "^4.17.2",
+    "randomstring": "^1.1.5"
   }
 }

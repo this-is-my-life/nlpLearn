@@ -35,18 +35,18 @@
         },
         "stemDict": {
           "안녕": {
-            "intent": "greetings.hello",
+            "intent": "nlp.2yeJnQDvVrwTWZvSG03x8gA9DnhYOI",
             "domain": "default"
           }
         },
         "intentDict": {
-          "greetings.hello": "default"
+          "nlp.2yeJnQDvVrwTWZvSG03x8gA9DnhYOI": "default"
         },
         "sentences": [
           {
             "domain": "default",
             "utterance": "안녕",
-            "intent": "greetings.hello"
+            "intent": "nlp.2yeJnQDvVrwTWZvSG03x8gA9DnhYOI"
           }
         ],
         "domains": {
@@ -66,16 +66,16 @@
               "안녕": 1
             },
             "intents": {
-              "greetings.hello": 1
+              "nlp.2yeJnQDvVrwTWZvSG03x8gA9DnhYOI": 1
             },
             "intentFeatures": {
-              "greetings.hello": {
+              "nlp.2yeJnQDvVrwTWZvSG03x8gA9DnhYOI": {
                 "안녕": 1
               }
             },
             "featuresToIntent": {
               "안녕": [
-                "greetings.hello"
+                "nlp.2yeJnQDvVrwTWZvSG03x8gA9DnhYOI"
               ]
             },
             "neuralNetwork": {
@@ -94,7 +94,7 @@
                 "안녕"
               ],
               "intents": [
-                "greetings.hello"
+                "nlp.2yeJnQDvVrwTWZvSG03x8gA9DnhYOI"
               ],
               "perceptrons": [
                 [
@@ -129,9 +129,9 @@
     },
     "responses": {
       "ko": {
-        "greetings.hello": [
+        "nlp.2yeJnQDvVrwTWZvSG03x8gA9DnhYOI": [
           {
-            "answer": "그래 안녕"
+            "answer": "안녕하세요"
           }
         ]
       }

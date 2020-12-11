@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "languages": [
+      "ko"
+    ],
+    "forceNER": true,
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "ko"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "ko": {
+        "settings": {
+          "locale": "ko",
+          "trainByDomain": false,
+          "tag": "domain-manager-ko",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "안녕": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "greetings.hello": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "안녕",
+            "intent": "greetings.hello"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "ko",
+              "tag": "nlu-ko",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "안녕": 1
+            },
+            "intents": {
+              "greetings.hello": 1
+            },
+            "intentFeatures": {
+              "greetings.hello": {
+                "안녕": 1
+              }
+            },
+            "featuresToIntent": {
+              "안녕": [
+                "greetings.hello"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "ko",
+                "tag": "nlu-ko",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "안녕"
+              ],
+              "intents": [
+                "greetings.hello"
+              ],
+              "perceptrons": [
+                [
+                  9.46274471282959,
+                  4.736227717439353
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "ko",
+        "안녕"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "ko": {
+        "greetings.hello": [
+          {
+            "answer": "그래 안녕"
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}
